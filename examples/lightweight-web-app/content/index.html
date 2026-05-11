@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>${{ values.name }}</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="summary" aria-labelledby="app-title">
+        <div>
+          <p class="eyebrow">Backstage Template</p>
+          <h1 id="app-title">${{ values.name }}</h1>
+          <p class="lede">${{ values.description }}</p>
+        </div>
+        <div class="status" aria-label="Application status">
+          <span class="status-dot"></span>
+          Live starter
+        </div>
+      </section>
+
+      <section class="grid" aria-label="Starter sections">
+        <article>
+          <span>01</span>
+          <h2>Ship</h2>
+          <p>Static assets, no framework lock-in, and a single Node command for local preview.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h2>Own</h2>
+          <p>Registered in Backstage with catalog metadata from the generated component file.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h2>Extend</h2>
+          <p>Add routes, API calls, or a build step only when the project needs them.</p>
+        </article>
+      </section>
+    </main>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
